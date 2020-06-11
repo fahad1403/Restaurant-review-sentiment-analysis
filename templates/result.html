@@ -8,6 +8,7 @@
         <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='icon.png') }}">
 		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
@@ -50,9 +51,9 @@
 		<h3 class="text-secondary"><b>Prediction</b></h3><br>
 		<div class="results">
 			{% if prediction == 1%}
-				<h1> <span class="text-success">Great! This is a POSITIVE Review.</span></h1>
+				<h1> <span class="text-success">This is a POSITIVE Review.</span></h1>
 			{% elif prediction == 0%}
-				<h1> <span class='text-danger'>Oops! This is a NEGATIVE Review.</span></h1>
+				<h1> <span class='text-danger'>This is a NEGATIVE Review.</span></h1>
 			{% endif %}
 		</div>
 	</div>
